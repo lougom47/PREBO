@@ -228,27 +228,48 @@
 </div>
 <!-- Right Side Navigation & Actions -->
 <div class="flex-1 flex justify-end items-center space-x-gutter text-label-md font-label-md">
-<nav class="flex items-center space-x-gutter">
-<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Inicio</a><a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all cursor-pointer" href="#productos-section">Productos</a>
-<a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all" href="#">Nosotros</a>
-<a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all" href="#">Contacto</a>
-</nav>
-<button aria-label="Contact Us" class="text-primary hover:text-primary-container transition-all scale-95 active:scale-90 flex items-center justify-center p-2 rounded-full hover:bg-surface-container-low">
-<span class="material-symbols-outlined" data-icon="shopping_cart">mail</span>
-</button>
-</div>
+    <nav class="flex items-center space-x-gutter">
+        <a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Inicio</a>
+        
+        <!-- Enlace a la sección de productos -->
+        <a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all cursor-pointer" href="#productos">Productos</a>
+        
+        <!-- Enlace a la sección de nosotros -->
+        <a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all" href="#nosotros">Nosotros</a>
+        
+        <!-- Enlace directo al correo electrónico -->
+        <a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all" href="mailto:alimentosprebo@gmail.com">Contacto</a>
+    </nav>
+    
+    <!-- Icono del sobre convertido en enlace al correo -->
+    <a aria-label="Contact Us" href="mailto:alimentosprebo@gmail.com" class="text-primary hover:text-primary-container transition-all scale-95 active:scale-90 flex items-center justify-center p-2 rounded-full hover:bg-surface-container-low cursor-pointer">
+        <span class="material-symbols-outlined" data-icon="shopping_cart">mail</span>
+    </a>
 </div>
 <!-- Mobile Nav -->
 <div class="flex md:hidden justify-between items-center px-margin-mobile py-4 w-full">
-<button class="text-secondary hover:text-primary transition-colors duration-200 p-2">
-<span class="material-symbols-outlined" data-icon="menu">menu</span>
-</button>
-<a class="flex items-center scale-95 active:scale-90 transition-transform" href="#">
-<img alt="PREBO" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8CqtQktdmSEg3x9utYCUFYMMMaUimsAybKMhCpCoh_zDxLGeA-485CEKyZM0f0frbP23jSGRvvTUNk-xteX0UdfjkfO56YSRf0IlfaexYp4D4OW4YlUTFsRwfBNeFqkqGA7Zxd9W3ftwloVh2snsO-cXgYJJoGLgdYGqS5RCR5SmST6mq9WUJIYnfPcGEUO2dPjZYfy_HEKe0lP7fIDCSgeU0C2I3ZuucrgoKcdmJjm9HBvS6HE-twfWkXOmMp3bLE3kuKg6iowKv">
-</a>
-<button aria-label="Contact Us" class="text-primary hover:text-primary-container transition-all p-2 rounded-full">
-<span class="material-symbols-outlined" data-icon="shopping_cart">mail</span>
-</button>
+    <!-- Botón de menú hamburguesa con un ID -->
+    <button id="btn-menu" class="text-secondary hover:text-primary transition-colors duration-200 p-2">
+        <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    </button>
+    
+    <!-- Logo central -->
+    <a class="flex items-center scale-95 active:scale-90 transition-transform" href="#">
+        <img alt="PREBO" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8CqtQktdmSEg3x9utYCUFYMMMaUimsAybKMhCpCoh_zDxLGeA-485CEKyZM0f0frbP23jSGRvvTUNk-xteX0UdfjkfO56YSRf0IlfaexYp4D4OW4YlUTFsRwfBNeFqkqGA7Zxd9W3ftwloVh2snsO-cXgYJJoGLgdYGqS5RCR5SmST6mq9WUJIYnfPcGEUO2dPjZYfy_HEKe0lP7fIDCSgeU0C2I3ZuucrgoKcdmJjm9HBvS6HE-twfWkXOmMp3bLE3kuKg6iowKv">
+    </a>
+    
+    <!-- Icono del sobre -->
+    <a aria-label="Contact Us" href="mailto:alimentosprebo@gmail.com" class="text-primary hover:text-primary-container transition-all p-2 rounded-full cursor-pointer">
+        <span class="material-symbols-outlined" data-icon="shopping_cart">mail</span>
+    </a>
+</div>
+
+<!-- Menú Desplegable (Oculto por defecto) -->
+<div id="menu-desplegable" class="hidden absolute top-full left-0 w-full bg-surface-container-lowest shadow-md border-t border-outline-variant flex flex-col p-4 md:hidden">
+    <a class="text-primary font-bold py-3 border-b border-outline-variant" href="#">Inicio</a>
+    <a class="text-secondary hover:text-primary py-3 border-b border-outline-variant" href="#productos">Productos</a>
+    <a class="text-secondary hover:text-primary py-3 border-b border-outline-variant" href="#nosotros">Nosotros</a>
+    <a class="text-secondary hover:text-primary py-3" href="mailto:alimentosprebo@gmail.com">Contacto</a>
 </div>
 </header>
 <!-- Main Content Area -->
@@ -415,5 +436,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+<!-- Script para el menú móvil -->
+<script>
+    const btnMenu = document.getElementById('btn-menu');
+    const menuDesplegable = document.getElementById('menu-desplegable');
+    const enlacesMenu = menuDesplegable.querySelectorAll('a');
 
+    // Abre y cierra el menú al tocar la hamburguesa
+    btnMenu.addEventListener('click', () => {
+        menuDesplegable.classList.toggle('hidden');
+    });
+
+    // Cierra el menú automáticamente cuando se toca una opción (para que no quede estorbando en la pantalla)
+    enlacesMenu.forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            menuDesplegable.classList.add('hidden');
+        });
+    });
+</script>
 </body></html>
