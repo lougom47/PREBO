@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;&lt;html lang="es" style=""&gt;&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="utf-8"&gt;</p>
+<p class="p1">&lt;meta content="width=device-width, initial-scale=1.0" name="viewport"&gt;</p>
+<p class="p1">&lt;title&gt;PREBO - Inicio&lt;/title&gt;</p>
+<p class="p1">&lt;!-- Material Symbols Outlined --&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;!-- Plus Jakarta Sans Font --&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;!-- Tailwind CSS --&gt;</p>
+<p class="p1">&lt;script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"&gt;&lt;/script&gt;</p>
+<p class="p1">&lt;!-- Tailwind Config --&gt;</p>
+<p class="p1">&lt;script id="tailwind-config"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>tailwind.config = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>darkMode: "class",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>theme: {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>extend: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"colors": {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-bright": "#fbf9f9",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-container-lowest": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"secondary-fixed-dim": "#c8c6c2",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-background": "#1b1c1c",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"primary-fixed": "#ffdad5",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-primary-fixed-variant": "#930007",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"secondary": "#5e5e5b",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"primary-fixed-dim": "#ffb4aa",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-secondary-container": "#63635f",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-variant": "#e3e2e2",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-tertiary-fixed": "#1c1b1b",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"tertiary-fixed-dim": "#c8c6c5",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"outline": "#936e69",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-primary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-tint": "#E50914",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-secondary-fixed-variant": "#474744",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"tertiary-fixed": "#e5e2e1",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-tertiary-fixed-variant": "#474746",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-surface": "#1b1c1c",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-container": "#efeded",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface": "#fbf9f9",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"background": "#fbf9f9",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"primary-container": "#b80710",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-tertiary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-surface-variant": "#5e3f3b",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-error-container": "#93000a",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-secondary-fixed": "#1b1c19",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"error": "#ba1a1a",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"secondary-fixed": "#e4e2dd",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-error": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"inverse-surface": "#303031",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"inverse-primary": "#ffb4aa",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"error-container": "#ffdad6",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"primary": "#E50914",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"outline-variant": "#e9bcb6",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-dim": "#dbdad9",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-container-high": "#e9e8e7",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-secondary": "#ffffff",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"tertiary": "#595958",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"secondary-container": "#e1dfdb",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-primary-container": "#fff5f3",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"inverse-on-surface": "#f2f0f0",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"tertiary-container": "#727171",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-primary-fixed": "#410001",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-container-low": "#f5f3f3",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"surface-container-highest": "#e3e2e2",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"on-tertiary-container": "#faf6f6"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"borderRadius": {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"DEFAULT": "0.25rem",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"lg": "0.5rem",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"xl": "0.75rem",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"full": "9999px"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"spacing": {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"margin-desktop": "64px",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"unit": "8px",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"margin-mobile": "20px",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"container-max": "1280px",</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"gutter": "24px"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"fontFamily": {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"body-lg": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Plus Jakarta Sans"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"headline-lg-mobile": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Plus Jakarta Sans"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"headline-xl": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Plus Jakarta Sans"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"body-md": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Plus Jakarta Sans"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"headline-lg": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Plus Jakarta Sans"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"label-md": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Plus Jakarta Sans"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"label-sm": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Plus Jakarta Sans"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"headline-md": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Plus Jakarta Sans"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"fontSize": {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"body-lg": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"18px",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"lineHeight": "28px",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"fontWeight": "400"</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"headline-lg-mobile": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"28px",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"lineHeight": "36px",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"fontWeight": "700"</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"headline-xl": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"48px",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"lineHeight": "56px",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"letterSpacing": "-0.02em",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"fontWeight": "700"</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"body-md": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"16px",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"lineHeight": "24px",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"fontWeight": "400"</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"headline-lg": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"32px",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"lineHeight": "40px",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"letterSpacing": "-0.01em",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"fontWeight": "700"</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"label-md": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"14px",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"lineHeight": "20px",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"letterSpacing": "0.05em",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"fontWeight": "600"</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"label-sm": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"12px",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"lineHeight": "16px",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"fontWeight": "500"</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>"headline-md": [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"24px",</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"lineHeight": "32px",</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>"fontWeight": "600"</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;style class=""&gt;<span class="Apple-converted-space">    </span>.carousel-item {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>position: absolute;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transition: all 0.4s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: translateX(0) scale(0.8);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>z-index: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>pointer-events: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 320px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-item.active {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: translateX(0) scale(1.25);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>z-index: 2;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>pointer-events: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-item.prev {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: translateX(-115%) scale(0.85);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>z-index: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>pointer-events: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.carousel-item.next {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>transform: translateX(115%) scale(0.85);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>z-index: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>pointer-events: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.carousel-item { width: 220px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.carousel-item.prev { transform: translateX(-95%) scale(0.8); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.carousel-item.next { transform: translateX(95%) scale(0.8); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes floating-bounce {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>0%, 100% { transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>50% { transform: translateY(-10px); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes pulse-shadow {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>0%, 100% { box-shadow: 0 10px 25px -5px rgba(229, 9, 20, 0.4), 0 8px 10px -6px rgba(229, 9, 20, 0.4); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>50% { box-shadow: 0 20px 35px -5px rgba(229, 9, 20, 0.6), 0 15px 15px -6px rgba(229, 9, 20, 0.6); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.animate-floating-cta {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>animation: floating-bounce 3s ease-in-out infinite, pulse-shadow 3s ease-in-out infinite;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col"&gt;</p>
+<p class="p1">&lt;!-- TopNavBar --&gt;</p>
+<p class="p1">&lt;header class="bg-surface-container-lowest shadow-sm border-b border-outline-variant docked full-width sticky top-0 w-full z-50"&gt;</p>
+<p class="p1">&lt;!-- Desktop Nav --&gt;</p>
+<p class="p1">&lt;div class="hidden md:flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto"&gt;</p>
+<p class="p1">&lt;!-- Left Side Spacer (to perfectly center the logo) --&gt;</p>
+<p class="p1">&lt;div class="flex-1"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Centered Logo --&gt;</p>
+<p class="p1">&lt;div class="flex-1 flex justify-center scale-95 active:scale-90 transition-transform"&gt;</p>
+<p class="p1">&lt;a class="flex items-center" href="#"&gt;</p>
+<p class="p1">&lt;img alt="PREBO" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8CqtQktdmSEg3x9utYCUFYMMMaUimsAybKMhCpCoh_zDxLGeA-485CEKyZM0f0frbP23jSGRvvTUNk-xteX0UdfjkfO56YSRf0IlfaexYp4D4OW4YlUTFsRwfBNeFqkqGA7Zxd9W3ftwloVh2snsO-cXgYJJoGLgdYGqS5RCR5SmST6mq9WUJIYnfPcGEUO2dPjZYfy_HEKe0lP7fIDCSgeU0C2I3ZuucrgoKcdmJjm9HBvS6HE-twfWkXOmMp3bLE3kuKg6iowKv"&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Right Side Navigation &amp; Actions --&gt;</p>
+<p class="p1">&lt;div class="flex-1 flex justify-end items-center space-x-gutter text-label-md font-label-md"&gt;</p>
+<p class="p1">&lt;nav class="flex items-center space-x-gutter"&gt;</p>
+<p class="p1">&lt;a class="text-primary font-bold border-b-2 border-primary pb-1" href="#"&gt;Inicio&lt;/a&gt;&lt;a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all cursor-pointer" href="#productos-section"&gt;Productos&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all" href="#"&gt;Nosotros&lt;/a&gt;</p>
+<p class="p1">&lt;a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all" href="#"&gt;Contacto&lt;/a&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;button aria-label="Contact Us" class="text-primary hover:text-primary-container transition-all scale-95 active:scale-90 flex items-center justify-center p-2 rounded-full hover:bg-surface-container-low"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="shopping_cart"&gt;mail&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Mobile Nav --&gt;</p>
+<p class="p1">&lt;div class="flex md:hidden justify-between items-center px-margin-mobile py-4 w-full"&gt;</p>
+<p class="p1">&lt;button class="text-secondary hover:text-primary transition-colors duration-200 p-2"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="menu"&gt;menu&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;a class="flex items-center scale-95 active:scale-90 transition-transform" href="#"&gt;</p>
+<p class="p1">&lt;img alt="PREBO" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8CqtQktdmSEg3x9utYCUFYMMMaUimsAybKMhCpCoh_zDxLGeA-485CEKyZM0f0frbP23jSGRvvTUNk-xteX0UdfjkfO56YSRf0IlfaexYp4D4OW4YlUTFsRwfBNeFqkqGA7Zxd9W3ftwloVh2snsO-cXgYJJoGLgdYGqS5RCR5SmST6mq9WUJIYnfPcGEUO2dPjZYfy_HEKe0lP7fIDCSgeU0C2I3ZuucrgoKcdmJjm9HBvS6HE-twfWkXOmMp3bLE3kuKg6iowKv"&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;button aria-label="Contact Us" class="text-primary hover:text-primary-container transition-all p-2 rounded-full"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="shopping_cart"&gt;mail&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p1">&lt;!-- Main Content Area --&gt;</p>
+<p class="p1">&lt;main class="w-full flex-grow"&gt;</p>
+<p class="p1">&lt;section class="w-full h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url(&amp;quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDJFzF0_Ik4T3s_lZXdo012NmxuyAVcHYsitX9Md-88LmZMvQUy2g4McKKkSENGk6cUxg5t3CkU0-c9t08rr1lpSlybARsSJo8tob8bZzDRkQyvZrJp0EA1U_2RR9vTgh3_sWVAJuQ-a7icJMIggqnv4bxBxN86hAOgyVPOfUB0p0OAjDkJwpm2wuBUTZFs7rM5zreS5CTt44ajl0LKait5ylwNg-AwKOKtA0uMLPV9FPfaBcptGM3iTTJb0QTuICRkIrvcgaSNwkhHtTw&amp;quot;);"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-container-lowest/80 backdrop-blur-sm p-10 md:p-16 rounded-xl shadow-2xl border border-surface-container-high text-center max-w-2xl mx-4"&gt;</p>
+<p class="p1">&lt;h1 class="text-headline-xl font-headline-xl text-primary mb-6"&gt;Sabor Auténtico y Frescura Garantizada&lt;/h1&gt;</p>
+<p class="p1">&lt;p class="text-body-lg font-body-lg text-secondary mb-8"&gt;Distribuimos el auténtico queso venezolano directamente a tu negocio. Ofrecemos una selección de calidad, stock constante y entregas a tiempo para que tus ventas nunca se detengan.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="flex flex-wrap justify-center gap-4"&gt;</p>
+<p class="p1">&lt;a class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-primary-container transition-all shadow-md" href="#"&gt;Ver Productos&lt;/a&gt;</p>
+<p class="p1">&lt;a class="bg-surface-container-lowest text-primary border border-primary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-all shadow-sm" href="#"&gt;Sobre Nosotros&lt;/a&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Carousel Section --&gt;</p>
+<p class="p1">&lt;section class="py-20 bg-surface" id="productos-section"&gt;</p>
+<p class="p1">&lt;div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center"&gt;</p>
+<p class="p1">&lt;h2 class="text-headline-lg font-headline-lg text-primary mb-12 text-center"&gt;Nuestros Productos&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="relative flex items-center justify-center w-full max-w-[900px] h-[550px]"&gt;</p>
+<p class="p1">&lt;!-- left arrow --&gt;</p>
+<p class="p1">&lt;button class="absolute z-20 w-14 h-14 bg-white rounded-full shadow-md text-[#E50914] hover:scale-110 transition-transform flex items-center justify-center border border-surface-variant md:-left-16 left-2" id="prevBtn"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[32px]"&gt;chevron_left&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;!-- track --&gt;</p>
+<p class="p1">&lt;div class="flex items-center justify-center relative w-full h-full" id="carouselTrack"&gt;</p>
+<p class="p1">&lt;div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px] active"&gt;&lt;div class="absolute top-6 right-6 bg-[#E50914] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md shadow-sm z-10"&gt;Estrella&lt;/div&gt;</p>
+<p class="p1">&lt;img alt="Merideño" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAARXn588SlQRpfShzq8xL4rcF-ZINqyXhvESEXgv1lggx4KvaHKobWLbOivmWI1wc2-XCkMEervDq3jJpcoRmxecX8_QeA4BdhoVg83JbxO9-lIrJtjwvkDbXUqRFjREOaqAYULVTqL_KQBLkJob6qD0TlDmr88_hHhJb6QKequ89QYALxMdwdETEv25-sJckZHpNyfN6IAeOWgFzDLaSf_SNg-f0KJnBlrVl2uuRyXu32Coxx9PODALQNiW2sJyRegjR-qe62Cb6N1VA"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);"&gt;Merideño&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="flex justify-center mt-0"&gt;&lt;span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm"&gt;Peso Variable&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px] next"&gt;&lt;div class="absolute top-6 right-6 bg-[#E50914] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md shadow-sm z-10"&gt;Estrella&lt;/div&gt;</p>
+<p class="p1">&lt;img alt="Guayanés" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARV-17e683nT8R2DQz1kIPCA39lxcCH5ytO73KSj792Wc3LavOzs12jC9Kk1nHAxxUujMdwWF68qmAxRitYv_X97OalWsFbWEYaAFTs1yudtBSjCJZFkb9V5Zhl1V4iPKWpL34X4IaCYH556DyvtwVcOhyLTZe0srvgBA-wZ1ZfydF8JXVPWqv6XTCGBX49ddaHjeE8s109uWagIpTfPHDptiCZwBGxfJNcrafpxUzJ09Gn8IRQq33OKr6obAEjStazsOG3UAnsur9YiQ"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);"&gt;Guayanés&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="flex justify-center mt-0"&gt;&lt;span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm"&gt;Peso Variable&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]"&gt;&lt;div class="absolute top-6 right-6 bg-[#E50914] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md shadow-sm z-10"&gt;Estrella&lt;/div&gt;</p>
+<p class="p1">&lt;img alt="Telita" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-GWlDU6WYYh2lTWJdE5rtg7Tmv0i_xGNE4MOTZXSceMGBCSBbSl2QU2feE2WxfSpm2bwmOr7aeCHLiS0Alu_Bh37KoIvVcgiv_PuTQ_oUWGUOpCSSwvvL05XBDCIvHx6sqC0ANNof3pc5DNaqyLgtcYySVXHb6pGPQSA4ssj20AszX6BDPpe2M-u57g2sJBVRG6LZ0kdh4yLWSfWf2vRP-Jww6rJk1WQchYMX8SFKqSAIRVM0nLK0MkIKJQ0JzIOxQe_c1KlyeVjK"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);"&gt;Telita&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="flex justify-center mt-0"&gt;&lt;span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm"&gt;Peso Variable&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]"&gt;</p>
+<p class="p1">&lt;img alt="Requesón" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLFKgtM0DweciuHi4T7GDMlZh7XK0No9hHwf5LBLhFhEhEIGbVQjL9SZD4Do4ReEZvIPoX9lqfJY5JvCNcvB_QSPYA9z-DpbZanCF9GPr-jsge50FwGuvxyqlIZkpUF5VCzpCqp0Ysku-kwZv0WcEcYcGuTSQD-wILNiO7-fLrxqToNx1yl2fh0PWP4LiAi4O6N6gYh8xYr_OXnqVutVTuXp98UloP1dZB7cGuOEv0RC6GuN7MLdDgJhMWhKzFPtZnR3Z_8VJq3wUI"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);"&gt;Requesón&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="flex justify-center mt-0"&gt;&lt;span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm"&gt;Peso Variable&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]"&gt;</p>
+<p class="p1">&lt;img alt="Santa Bárbara" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD39mTqPc-C2O4SE-HrPAH3ZRhUD1bMq6Bw9tfTxIbi0sbnVGoH26TR0yQc3rF8lOXZQ8lvhd7kua1PVhwNyKU4rTEzdOwt9087hBxSU-NoYkKm55X0zTy_1JAkVBXFLNT3lAVAUNmfY5l1uFUENivOPx_ks4smkR6977BDWLhTUpmvS4ApPCtIXjsAb1NFDlsOdLBteC-om_6wu4DO40KvP1FKBcEO2_5I212BhIQ3kGNzD4BDg-UK0GuyBMJ2uUsfUHL7WJugBxFL"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);"&gt;Santa Bárbara&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="flex justify-center mt-0"&gt;&lt;span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm"&gt;Peso Variable&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]"&gt;&lt;img alt="Palmito" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIUjDIxxFSQsZNW8beEIpByfphEvHYRgXggLlTywJlgzKRlDuilYOTb4svROdQqzhj4lUHIKYCKCWtNge14MZiwt08VkHOF7TSG6VCpS3pTspLqWtB6J3XxpIQZSzbdRUY_UGWKlMk5g1D1nt7eh9jnoItV9AslAGFhkSlycn1tPDAFBUCIm6QVlA5pXpC0FtjY9ULP_A2w2jUZWDMREKbe1rRBHM6hknP-1kNt5D1Edod9-EbwZLSnU88bOqkeV2zrQB0HBqenX9u"&gt;&lt;h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);"&gt;Palmito&lt;/h3&gt;&lt;div class="flex justify-center mt-0"&gt;&lt;span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm"&gt;Peso Variable&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]"&gt;&lt;img alt="Cuajada" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0zmXaRfbTzsZpdTvoykxjTUXB4azhPTjE9bToRXihRMDBPokUMcHRBsOEpbI3Y-LX67zkrlhACaMcp3wsg7_3ixWQ6K-hUOrXAT_D-gq9RJPIgBAxOqTzi8GINSXjI3vJPVhu3l0t4GbdFK2uCk1Ghzj-9ui8_irdGy4O0q1WLeSzV2uI66tpw60n3S55vwOxbpbfiUvDyrCpn_aWJtjnPDYopmt1tFAfF_vf46vwCKF8RNzgy-7dvp8T_IYCY8jBzV6HwpYiPBhm"&gt;&lt;h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);"&gt;Cuajada&lt;/h3&gt;&lt;div class="flex justify-center mt-0"&gt;&lt;span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm"&gt;Peso Variable&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px] prev"&gt;</p>
+<p class="p1">&lt;img alt="Arepero" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_VyUCAABLAlu1ICuMElRAfKCbFNkW7M42eOyNDTUCYnjNkCyUe0Oza8uAY9G0Rn7lVvjXBX4VkN_7ahPDrZIdQag_Dmgz0MJlBr_W0An7YfQqPgCv2-hGTgyek_uT3-hRQ14t9j3Y9R8k4DT7cGSe_jYqP1S4Q--OTZmdlO3GINordQ1_0NQEEyB0g2Va_JhwTC1HTLJd_B1T16GK8mQSkJUjVQ1IzLpyeeQy2eyYLyIibbc_nGRER4TGYnmhngkbHYIeDSsNoB1aTNw"&gt;</p>
+<p class="p1">&lt;h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);"&gt;Arepero&lt;/h3&gt;</p>
+<p class="p1">&lt;div class="flex justify-center mt-0"&gt;&lt;span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm"&gt;500gr aprox&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- right arrow --&gt;</p>
+<p class="p1">&lt;button class="absolute z-20 w-14 h-14 bg-white rounded-full shadow-md text-[#E50914] hover:scale-110 transition-transform flex items-center justify-center border border-surface-variant md:-right-16 right-2" id="nextBtn"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-[32px]"&gt;chevron_right&lt;/span&gt;</p>
+<p class="p1">&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;!-- Floating CTA Button --&gt;</p>
+<p class="p1">&lt;a class="fixed bottom-8 right-8 z-[100] bg-[#E50914] px-8 py-4 md:px-10 md:py-5 rounded-full font-bold text-md md:text-lg tracking-wider hover:opacity-95 transition-all shadow-lg font-['Plus_Jakarta_Sans'] text-[#ffffff] animate-floating-cta text-center" href="#"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>SOLICITA LA LISTA DE PRECIOS</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"&gt;</p>
+<p class="p1">&lt;hr class="border-t border-outline opacity-20 my-10"&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;section class="bg-surface pt-10 pb-20" id="sobre-nosotros-section"&gt;</p>
+<p class="p1">&lt;div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop text-center"&gt;</p>
+<p class="p1">&lt;h2 class="text-headline-lg font-headline-lg text-primary mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>Sobre Nosotros</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="space-y-6 text-body-lg font-body-lg text-secondary"&gt;</p>
+<p class="p1">&lt;p class=""&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Detrás de cada queso fresco que llega a tu mesa, hay una historia de tierra, dedicación y respeto por nuestras raíces. Alimentos Prebo C.A. nació con un propósito claro: honrar la riqueza de nuestra tradición quesera, asegurando que todo lo bueno que se produce en el campo llegue directo, fresco y perfecto a la mesa de los caraqueños.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1">&lt;p class=""&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Sabemos que el secreto de un auténtico queso no solo está en su origen, sino en preservar su frescura. Por eso, nos propusimos ser el puente directo entre el productor del campo y tu negocio, garantizando que el sabor e identidad de nuestra gastronomía se entreguen en la ciudad con puntualidad.&lt;/p&gt;</p>
+<p class="p1">&lt;p class=""&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>Para nosotros, la calidad es un pilar fundamental. Cada día recorremos las rutas de Caracas, con la certeza de que cumplir una promesa de entrega es la mejor forma de honrar la confianza de quienes nos eligen como sus aliados.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p1">&lt;/main&gt;</p>
+<p class="p1">&lt;!-- Footer --&gt;</p>
+<p class="p1">&lt;footer class="bg-secondary-fixed full-width bottom mt-20"&gt;</p>
+<p class="p1">&lt;div class="w-full py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto"&gt;</p>
+<p class="p1">&lt;!-- Branding Column --&gt;</p>
+<p class="p1">&lt;div class="flex flex-col items-start opacity-80 hover:opacity-100 transition-opacity"&gt;</p>
+<p class="p1">&lt;a class="mb-4" href="#"&gt;</p>
+<p class="p1">&lt;img alt="PREBO" class="h-12 w-auto object-contain mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcmZ1TuPuUQYFCgQJ3RtrGmbyh7S4btHEaSVLeMiziWDKtO1GOVheP_8PmVkG0fph_M_hri4WLSh-vwkFxXsyD_7jpxMqb7T63lOVHfQNbhjabDLfhB1bERz6s36OhkTmSyPW0nwsHQhdM_XOCIXTskhbO23rVkmSOkqOTuMdEfwddLedJvqM0v4hl72ii7VuJXg0Qd2dOdXxOJ4UFb1bABQxCzImuooI8hlMwtyIy-1YRRdURbF4Ya6CvMszx-ynbKY1V-CcV2FQF"&gt;</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p1">&lt;p class="text-body-md font-body-md text-on-secondary-fixed-variant mt-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Tradición quesera venezolana, llevando la frescura y la calidad a cada negocio de Caracas.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Navigation Links --&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;h3 class="text-label-md font-label-md text-primary font-bold mb-4 uppercase tracking-wider"&gt;Navegación&lt;/h3&gt;</p>
+<p class="p1">&lt;ul class="space-y-3"&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-primary font-semibold text-label-sm font-label-sm hover:underline transition-all" href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-secondary-fixed-variant hover:text-primary transition-colors text-label-sm font-label-sm hover:underline transition-all" href="#"&gt;Productos&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;li class=""&gt;&lt;a class="text-on-secondary-fixed-variant hover:text-primary transition-colors text-label-sm font-label-sm hover:underline transition-all" href="#"&gt;Sobre Nosotros&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1">&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Legal &amp; Support --&gt;</p>
+<p class="p1">&lt;div class="flex flex-col"&gt;</p>
+<p class="p1">&lt;h3 class="text-label-md font-label-md text-primary font-bold mb-4 uppercase tracking-wider"&gt;canales de atención&lt;/h3&gt;</p>
+<p class="p1">&lt;ul class="space-y-3"&gt;&lt;li class="flex items-center gap-2"&gt;&lt;span class="material-symbols-outlined text-[18px] text-primary"&gt;mail&lt;/span&gt;&lt;a class="text-on-secondary-fixed-variant hover:text-primary transition-colors text-label-sm font-label-sm hover:underline transition-all" href="mailto:alimentosprebo@gmail.com"&gt;alimentosprebo@gmail.com&lt;/a&gt;&lt;/li&gt;&lt;li class="flex items-center gap-2"&gt;&lt;span class="material-symbols-outlined text-[18px]" style="color: #E50914;"&gt;location_on&lt;/span&gt;&lt;span class="text-on-secondary-fixed-variant text-label-sm font-label-sm"&gt;Caracas, Venezuela.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Contact / Quality Indicator Placeholder --&gt;</p>
+<p class="p1">&lt;div class="flex flex-col items-start md:items-end justify-start mt-8 md:mt-0"&gt;</p>
+<p class="p1">&lt;div class="bg-surface-bright p-4 rounded-lg shadow-[0px_2px_4px_rgba(0,0,0,0.04)] flex items-center space-x-3 w-full max-w-xs border border-surface-variant"&gt;</p>
+<p class="p1">&lt;div class="text-on-primary rounded-full p-2 flex items-center justify-center" style="background-color: #E50914;"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined" data-icon="local_shipping" style="font-variation-settings: &amp;quot;FILL&amp;quot; 1;"&gt;local_shipping&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div&gt;</p>
+<p class="p1">&lt;p class="text-label-md font-label-md text-primary"&gt;Envío Refrigerado&lt;/p&gt;</p>
+<p class="p1">&lt;p class="text-label-sm font-label-sm text-secondary"&gt;Frescura garantizada&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Bottom Copyright Divider --&gt;</p>
+<p class="p1">&lt;div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center text-label-sm font-label-sm text-on-secondary-fixed-variant"&gt;</p>
+<p class="p1">&lt;p class=""&gt;© 2025 ALIMENTOS PREBO C.A. - Distribuidora de Quesos Venezolanos.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="flex space-x-4 mt-4 md:mt-0"&gt;</p>
+<p class="p1">&lt;span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer transition-colors" data-icon="public"&gt;mail&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const items = document.querySelectorAll('.carousel-item');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let currentIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const totalItems = items.length;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function updateCarousel() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>items.forEach(item =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>item.classList.remove('active', 'prev', 'next');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const prevIndex = (currentIndex - 1 + totalItems) % totalItems;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const nextIndex = (currentIndex + 1) % totalItems;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>items[currentIndex].classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>items[prevIndex].classList.add('prev');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>items[nextIndex].classList.add('next');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('nextBtn').addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>currentIndex = (currentIndex + 1) % totalItems;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>updateCarousel();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('prevBtn').addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>currentIndex = (currentIndex - 1 + totalItems) % totalItems;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>updateCarousel();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>updateCarousel();</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
