@@ -1,0 +1,419 @@
+<!DOCTYPE html><html lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>PREBO - Inicio</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Plus Jakarta Sans Font -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#fbf9f9",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#c8c6c2",
+                    "on-background": "#1b1c1c",
+                    "primary-fixed": "#ffdad5",
+                    "on-primary-fixed-variant": "#930007",
+                    "secondary": "#5e5e5b",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "on-secondary-container": "#63635f",
+                    "surface-variant": "#e3e2e2",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "outline": "#936e69",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#E50914",
+                    "on-secondary-fixed-variant": "#474744",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "on-surface": "#1b1c1c",
+                    "surface-container": "#efeded",
+                    "surface": "#fbf9f9",
+                    "background": "#fbf9f9",
+                    "primary-container": "#b80710",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#5e3f3b",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#1b1c19",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#e4e2dd",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#303031",
+                    "inverse-primary": "#ffb4aa",
+                    "error-container": "#ffdad6",
+                    "primary": "#E50914",
+                    "outline-variant": "#e9bcb6",
+                    "surface-dim": "#dbdad9",
+                    "surface-container-high": "#e9e8e7",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#595958",
+                    "secondary-container": "#e1dfdb",
+                    "on-primary-container": "#fff5f3",
+                    "inverse-on-surface": "#f2f0f0",
+                    "tertiary-container": "#727171",
+                    "on-primary-fixed": "#410001",
+                    "surface-container-low": "#f5f3f3",
+                    "surface-container-highest": "#e3e2e2",
+                    "on-tertiary-container": "#faf6f6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-xl": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ]
+            },
+            "fontSize": {
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "28px",
+                            {
+                                    "lineHeight": "36px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ]
+            }
+        },
+        },
+      }
+    </script>
+<style class="">    .carousel-item {
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+        transform: translateX(0) scale(0.8);
+        z-index: 0;
+        pointer-events: none;
+        width: 320px;
+    }
+    .carousel-item.active {
+        opacity: 1;
+        transform: translateX(0) scale(1.25);
+        z-index: 2;
+        pointer-events: auto;
+    }
+    .carousel-item.prev {
+        opacity: 1;
+        transform: translateX(-115%) scale(0.85);
+        z-index: 1;
+        pointer-events: auto;
+    }
+    .carousel-item.next {
+        opacity: 1;
+        transform: translateX(115%) scale(0.85);
+        z-index: 1;
+        pointer-events: auto;
+    }
+    @media (max-width: 768px) {
+        .carousel-item { width: 220px; }
+        .carousel-item.prev { transform: translateX(-95%) scale(0.8); }
+        .carousel-item.next { transform: translateX(95%) scale(0.8); }
+    }
+    @keyframes floating-bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+    @keyframes pulse-shadow {
+        0%, 100% { box-shadow: 0 10px 25px -5px rgba(229, 9, 20, 0.4), 0 8px 10px -6px rgba(229, 9, 20, 0.4); }
+        50% { box-shadow: 0 20px 35px -5px rgba(229, 9, 20, 0.6), 0 15px 15px -6px rgba(229, 9, 20, 0.6); }
+    }
+    .animate-floating-cta {
+        animation: floating-bounce 3s ease-in-out infinite, pulse-shadow 3s ease-in-out infinite;
+    }
+</style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-container-lowest shadow-sm border-b border-outline-variant docked full-width sticky top-0 w-full z-50">
+<!-- Desktop Nav -->
+<div class="hidden md:flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<!-- Left Side Spacer (to perfectly center the logo) -->
+<div class="flex-1"></div>
+<!-- Centered Logo -->
+<div class="flex-1 flex justify-center scale-95 active:scale-90 transition-transform">
+<a class="flex items-center" href="#">
+<img alt="PREBO" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8CqtQktdmSEg3x9utYCUFYMMMaUimsAybKMhCpCoh_zDxLGeA-485CEKyZM0f0frbP23jSGRvvTUNk-xteX0UdfjkfO56YSRf0IlfaexYp4D4OW4YlUTFsRwfBNeFqkqGA7Zxd9W3ftwloVh2snsO-cXgYJJoGLgdYGqS5RCR5SmST6mq9WUJIYnfPcGEUO2dPjZYfy_HEKe0lP7fIDCSgeU0C2I3ZuucrgoKcdmJjm9HBvS6HE-twfWkXOmMp3bLE3kuKg6iowKv">
+</a>
+</div>
+<!-- Right Side Navigation & Actions -->
+<div class="flex-1 flex justify-end items-center space-x-gutter text-label-md font-label-md">
+<nav class="flex items-center space-x-gutter">
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Inicio</a><a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all cursor-pointer" href="#productos-section">Productos</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all" href="#">Nosotros</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 hover:text-primary-container transition-all" href="#">Contacto</a>
+</nav>
+<button aria-label="Contact Us" class="text-primary hover:text-primary-container transition-all scale-95 active:scale-90 flex items-center justify-center p-2 rounded-full hover:bg-surface-container-low">
+<span class="material-symbols-outlined" data-icon="shopping_cart">mail</span>
+</button>
+</div>
+</div>
+<!-- Mobile Nav -->
+<div class="flex md:hidden justify-between items-center px-margin-mobile py-4 w-full">
+<button class="text-secondary hover:text-primary transition-colors duration-200 p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<a class="flex items-center scale-95 active:scale-90 transition-transform" href="#">
+<img alt="PREBO" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8CqtQktdmSEg3x9utYCUFYMMMaUimsAybKMhCpCoh_zDxLGeA-485CEKyZM0f0frbP23jSGRvvTUNk-xteX0UdfjkfO56YSRf0IlfaexYp4D4OW4YlUTFsRwfBNeFqkqGA7Zxd9W3ftwloVh2snsO-cXgYJJoGLgdYGqS5RCR5SmST6mq9WUJIYnfPcGEUO2dPjZYfy_HEKe0lP7fIDCSgeU0C2I3ZuucrgoKcdmJjm9HBvS6HE-twfWkXOmMp3bLE3kuKg6iowKv">
+</a>
+<button aria-label="Contact Us" class="text-primary hover:text-primary-container transition-all p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="shopping_cart">mail</span>
+</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="w-full flex-grow">
+<section class="w-full h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDJFzF0_Ik4T3s_lZXdo012NmxuyAVcHYsitX9Md-88LmZMvQUy2g4McKKkSENGk6cUxg5t3CkU0-c9t08rr1lpSlybARsSJo8tob8bZzDRkQyvZrJp0EA1U_2RR9vTgh3_sWVAJuQ-a7icJMIggqnv4bxBxN86hAOgyVPOfUB0p0OAjDkJwpm2wuBUTZFs7rM5zreS5CTt44ajl0LKait5ylwNg-AwKOKtA0uMLPV9FPfaBcptGM3iTTJb0QTuICRkIrvcgaSNwkhHtTw&quot;);">
+<div class="bg-surface-container-lowest/80 backdrop-blur-sm p-10 md:p-16 rounded-xl shadow-2xl border border-surface-container-high text-center max-w-2xl mx-4">
+<h1 class="text-headline-xl font-headline-xl text-primary mb-6">Sabor Auténtico y Frescura Garantizada</h1>
+<p class="text-body-lg font-body-lg text-secondary mb-8">Distribuimos el auténtico queso venezolano directamente a tu negocio. Ofrecemos una selección de calidad, stock constante y entregas a tiempo para que tus ventas nunca se detengan.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-primary-container transition-all shadow-md" href="#">Ver Productos</a>
+<a class="bg-surface-container-lowest text-primary border border-primary px-8 py-3 rounded-full font-label-md text-label-md hover:bg-surface-container-low transition-all shadow-sm" href="#">Sobre Nosotros</a>
+</div>
+</div>
+</section>
+<!-- Carousel Section -->
+<section class="py-20 bg-surface" id="productos-section">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-12 text-center">Nuestros Productos</h2>
+<div class="relative flex items-center justify-center w-full max-w-[900px] h-[550px]">
+<!-- left arrow -->
+<button class="absolute z-20 w-14 h-14 bg-white rounded-full shadow-md text-[#E50914] hover:scale-110 transition-transform flex items-center justify-center border border-surface-variant md:-left-16 left-2" id="prevBtn">
+<span class="material-symbols-outlined text-[32px]">chevron_left</span>
+</button>
+<!-- track -->
+<div class="flex items-center justify-center relative w-full h-full" id="carouselTrack">
+<div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px] active"><div class="absolute top-6 right-6 bg-[#E50914] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md shadow-sm z-10">Estrella</div>
+<img alt="Merideño" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAARXn588SlQRpfShzq8xL4rcF-ZINqyXhvESEXgv1lggx4KvaHKobWLbOivmWI1wc2-XCkMEervDq3jJpcoRmxecX8_QeA4BdhoVg83JbxO9-lIrJtjwvkDbXUqRFjREOaqAYULVTqL_KQBLkJob6qD0TlDmr88_hHhJb6QKequ89QYALxMdwdETEv25-sJckZHpNyfN6IAeOWgFzDLaSf_SNg-f0KJnBlrVl2uuRyXu32Coxx9PODALQNiW2sJyRegjR-qe62Cb6N1VA">
+<h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);">Merideño</h3>
+<div class="flex justify-center mt-0"><span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm">Peso Variable</span></div></div>
+<div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px] next"><div class="absolute top-6 right-6 bg-[#E50914] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md shadow-sm z-10">Estrella</div>
+<img alt="Guayanés" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARV-17e683nT8R2DQz1kIPCA39lxcCH5ytO73KSj792Wc3LavOzs12jC9Kk1nHAxxUujMdwWF68qmAxRitYv_X97OalWsFbWEYaAFTs1yudtBSjCJZFkb9V5Zhl1V4iPKWpL34X4IaCYH556DyvtwVcOhyLTZe0srvgBA-wZ1ZfydF8JXVPWqv6XTCGBX49ddaHjeE8s109uWagIpTfPHDptiCZwBGxfJNcrafpxUzJ09Gn8IRQq33OKr6obAEjStazsOG3UAnsur9YiQ">
+<h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);">Guayanés</h3>
+<div class="flex justify-center mt-0"><span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm">Peso Variable</span></div></div>
+<div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]"><div class="absolute top-6 right-6 bg-[#E50914] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-md shadow-sm z-10">Estrella</div>
+<img alt="Telita" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-GWlDU6WYYh2lTWJdE5rtg7Tmv0i_xGNE4MOTZXSceMGBCSBbSl2QU2feE2WxfSpm2bwmOr7aeCHLiS0Alu_Bh37KoIvVcgiv_PuTQ_oUWGUOpCSSwvvL05XBDCIvHx6sqC0ANNof3pc5DNaqyLgtcYySVXHb6pGPQSA4ssj20AszX6BDPpe2M-u57g2sJBVRG6LZ0kdh4yLWSfWf2vRP-Jww6rJk1WQchYMX8SFKqSAIRVM0nLK0MkIKJQ0JzIOxQe_c1KlyeVjK">
+<h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);">Telita</h3>
+<div class="flex justify-center mt-0"><span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm">Peso Variable</span></div></div>
+<div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]">
+<img alt="Requesón" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLFKgtM0DweciuHi4T7GDMlZh7XK0No9hHwf5LBLhFhEhEIGbVQjL9SZD4Do4ReEZvIPoX9lqfJY5JvCNcvB_QSPYA9z-DpbZanCF9GPr-jsge50FwGuvxyqlIZkpUF5VCzpCqp0Ysku-kwZv0WcEcYcGuTSQD-wILNiO7-fLrxqToNx1yl2fh0PWP4LiAi4O6N6gYh8xYr_OXnqVutVTuXp98UloP1dZB7cGuOEv0RC6GuN7MLdDgJhMWhKzFPtZnR3Z_8VJq3wUI">
+<h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);">Requesón</h3>
+<div class="flex justify-center mt-0"><span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm">Peso Variable</span></div></div>
+<div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]">
+<img alt="Santa Bárbara" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD39mTqPc-C2O4SE-HrPAH3ZRhUD1bMq6Bw9tfTxIbi0sbnVGoH26TR0yQc3rF8lOXZQ8lvhd7kua1PVhwNyKU4rTEzdOwt9087hBxSU-NoYkKm55X0zTy_1JAkVBXFLNT3lAVAUNmfY5l1uFUENivOPx_ks4smkR6977BDWLhTUpmvS4ApPCtIXjsAb1NFDlsOdLBteC-om_6wu4DO40KvP1FKBcEO2_5I212BhIQ3kGNzD4BDg-UK0GuyBMJ2uUsfUHL7WJugBxFL">
+<h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);">Santa Bárbara</h3>
+<div class="flex justify-center mt-0"><span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm">Peso Variable</span></div></div>
+<div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]"><img alt="Palmito" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIUjDIxxFSQsZNW8beEIpByfphEvHYRgXggLlTywJlgzKRlDuilYOTb4svROdQqzhj4lUHIKYCKCWtNge14MZiwt08VkHOF7TSG6VCpS3pTspLqWtB6J3XxpIQZSzbdRUY_UGWKlMk5g1D1nt7eh9jnoItV9AslAGFhkSlycn1tPDAFBUCIm6QVlA5pXpC0FtjY9ULP_A2w2jUZWDMREKbe1rRBHM6hknP-1kNt5D1Edod9-EbwZLSnU88bOqkeV2zrQB0HBqenX9u"><h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);">Palmito</h3><div class="flex justify-center mt-0"><span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm">Peso Variable</span></div></div><div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px]"><img alt="Cuajada" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0zmXaRfbTzsZpdTvoykxjTUXB4azhPTjE9bToRXihRMDBPokUMcHRBsOEpbI3Y-LX67zkrlhACaMcp3wsg7_3ixWQ6K-hUOrXAT_D-gq9RJPIgBAxOqTzi8GINSXjI3vJPVhu3l0t4GbdFK2uCk1Ghzj-9ui8_irdGy4O0q1WLeSzV2uI66tpw60n3S55vwOxbpbfiUvDyrCpn_aWJtjnPDYopmt1tFAfF_vf46vwCKF8RNzgy-7dvp8T_IYCY8jBzV6HwpYiPBhm"><h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);">Cuajada</h3><div class="flex justify-center mt-0"><span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm">Peso Variable</span></div></div>
+<div class="carousel-item bg-surface-container-lowest border border-surface-container-high rounded-xl shadow-lg flex flex-col items-center justify-between p-4 h-[380px] prev">
+<img alt="Arepero" class="w-full object-cover rounded-lg h-64 mb-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_VyUCAABLAlu1ICuMElRAfKCbFNkW7M42eOyNDTUCYnjNkCyUe0Oza8uAY9G0Rn7lVvjXBX4VkN_7ahPDrZIdQag_Dmgz0MJlBr_W0An7YfQqPgCv2-hGTgyek_uT3-hRQ14t9j3Y9R8k4DT7cGSe_jYqP1S4Q--OTZmdlO3GINordQ1_0NQEEyB0g2Va_JhwTC1HTLJd_B1T16GK8mQSkJUjVQ1IzLpyeeQy2eyYLyIibbc_nGRER4TGYnmhngkbHYIeDSsNoB1aTNw">
+<h3 class="text-headline-md font-headline-md text-on-surface text-center w-full pb-2" style="color: rgb(229, 9, 20);">Arepero</h3>
+<div class="flex justify-center mt-0"><span class="bg-surface-container text-on-surface text-label-sm px-3 py-1 rounded-full font-label-sm">500gr aprox</span></div></div>
+</div>
+<!-- right arrow -->
+<button class="absolute z-20 w-14 h-14 bg-white rounded-full shadow-md text-[#E50914] hover:scale-110 transition-transform flex items-center justify-center border border-surface-variant md:-right-16 right-2" id="nextBtn">
+<span class="material-symbols-outlined text-[32px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Floating CTA Button -->
+<a class="fixed bottom-8 right-8 z-[100] bg-[#E50914] px-8 py-4 md:px-10 md:py-5 rounded-full font-bold text-md md:text-lg tracking-wider hover:opacity-95 transition-all shadow-lg font-['Plus_Jakarta_Sans'] text-[#ffffff] animate-floating-cta text-center" href="#">
+    SOLICITA LA LISTA DE PRECIOS
+</a>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<hr class="border-t border-outline opacity-20 my-10">
+</div><section class="bg-surface pt-10 pb-20" id="sobre-nosotros-section">
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-10">
+      Sobre Nosotros
+    </h2>
+<div class="space-y-6 text-body-lg font-body-lg text-secondary">
+<p class="">
+        Detrás de cada queso fresco que llega a tu mesa, hay una historia de tierra, dedicación y respeto por nuestras raíces. Alimentos Prebo C.A. nació con un propósito claro: honrar la riqueza de nuestra tradición quesera, asegurando que todo lo bueno que se produce en el campo llegue directo, fresco y perfecto a la mesa de los caraqueños.
+      </p>
+<p class="">
+        Sabemos que el secreto de un auténtico queso no solo está en su origen, sino en preservar su frescura. Por eso, nos propusimos ser el puente directo entre el productor del campo y tu negocio, garantizando que el sabor e identidad de nuestra gastronomía se entreguen en la ciudad con puntualidad.</p>
+<p class="">
+        Para nosotros, la calidad es un pilar fundamental. Cada día recorremos las rutas de Caracas, con la certeza de que cumplir una promesa de entrega es la mejor forma de honrar la confianza de quienes nos eligen como sus aliados.
+      </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-secondary-fixed full-width bottom mt-20">
+<div class="w-full py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto">
+<!-- Branding Column -->
+<div class="flex flex-col items-start opacity-80 hover:opacity-100 transition-opacity">
+<a class="mb-4" href="#">
+<img alt="PREBO" class="h-12 w-auto object-contain mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcmZ1TuPuUQYFCgQJ3RtrGmbyh7S4btHEaSVLeMiziWDKtO1GOVheP_8PmVkG0fph_M_hri4WLSh-vwkFxXsyD_7jpxMqb7T63lOVHfQNbhjabDLfhB1bERz6s36OhkTmSyPW0nwsHQhdM_XOCIXTskhbO23rVkmSOkqOTuMdEfwddLedJvqM0v4hl72ii7VuJXg0Qd2dOdXxOJ4UFb1bABQxCzImuooI8hlMwtyIy-1YRRdURbF4Ya6CvMszx-ynbKY1V-CcV2FQF">
+</a>
+<p class="text-body-md font-body-md text-on-secondary-fixed-variant mt-4">
+                    Tradición quesera venezolana, llevando la frescura y la calidad a cada negocio de Caracas.
+                </p>
+</div>
+<!-- Navigation Links -->
+<div class="flex flex-col">
+<h3 class="text-label-md font-label-md text-primary font-bold mb-4 uppercase tracking-wider">Navegación</h3>
+<ul class="space-y-3">
+<li class=""><a class="text-primary font-semibold text-label-sm font-label-sm hover:underline transition-all" href="#">Inicio</a></li>
+<li class=""><a class="text-on-secondary-fixed-variant hover:text-primary transition-colors text-label-sm font-label-sm hover:underline transition-all" href="#">Productos</a></li>
+<li class=""><a class="text-on-secondary-fixed-variant hover:text-primary transition-colors text-label-sm font-label-sm hover:underline transition-all" href="#">Sobre Nosotros</a></li>
+</ul>
+</div>
+<!-- Legal & Support -->
+<div class="flex flex-col">
+<h3 class="text-label-md font-label-md text-primary font-bold mb-4 uppercase tracking-wider">canales de atención</h3>
+<ul class="space-y-3"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">mail</span><a class="text-on-secondary-fixed-variant hover:text-primary transition-colors text-label-sm font-label-sm hover:underline transition-all" href="mailto:alimentosprebo@gmail.com">alimentosprebo@gmail.com</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]" style="color: #E50914;">location_on</span><span class="text-on-secondary-fixed-variant text-label-sm font-label-sm">Caracas, Venezuela.</span></li></ul>
+</div>
+<!-- Contact / Quality Indicator Placeholder -->
+<div class="flex flex-col items-start md:items-end justify-start mt-8 md:mt-0">
+<div class="bg-surface-bright p-4 rounded-lg shadow-[0px_2px_4px_rgba(0,0,0,0.04)] flex items-center space-x-3 w-full max-w-xs border border-surface-variant">
+<div class="text-on-primary rounded-full p-2 flex items-center justify-center" style="background-color: #E50914;">
+<span class="material-symbols-outlined" data-icon="local_shipping" style="font-variation-settings: &quot;FILL&quot; 1;">local_shipping</span>
+</div>
+<div>
+<p class="text-label-md font-label-md text-primary">Envío Refrigerado</p>
+<p class="text-label-sm font-label-sm text-secondary">Frescura garantizada</p>
+</div>
+</div>
+</div>
+<!-- Bottom Copyright Divider -->
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center text-label-sm font-label-sm text-on-secondary-fixed-variant">
+<p class="">© 2025 ALIMENTOS PREBO C.A. - Distribuidora de Quesos Venezolanos.</p>
+<div class="flex space-x-4 mt-4 md:mt-0">
+<span class="material-symbols-outlined text-secondary hover:text-primary cursor-pointer transition-colors" data-icon="public">mail</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+    const totalItems = items.length;
+
+    function updateCarousel() {
+        items.forEach(item => {
+            item.classList.remove('active', 'prev', 'next');
+        });
+        
+        const prevIndex = (currentIndex - 1 + totalItems) % totalItems;
+        const nextIndex = (currentIndex + 1) % totalItems;
+        
+        items[currentIndex].classList.add('active');
+        items[prevIndex].classList.add('prev');
+        items[nextIndex].classList.add('next');
+    }
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarousel();
+    });
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        updateCarousel();
+    });
+
+    updateCarousel();
+});
+</script>
+
+
+
+
+
+
+</body></html>
